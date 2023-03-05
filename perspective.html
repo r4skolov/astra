@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Перспективы</title>
+	<link rel="stylesheet" href="css/app.css">
+	<script src="https://polyfill.io/v3/polyfill.min.js?features=globalThis%2CElement.prototype.closest%2CURLSearchParams"
+		        nomodule></script>
+	<script src="js/webcomponents-bundle.js" nomodule></script>
+	<script>/*! @formatter:off modernizr 3.6.0 (Custom Build) | MIT https://modernizr.com/download/?-overflowscrolling-webp-setclasses !*/!function(e,n,t){function r(e,n){return typeof e===n}function o(){var e,n,t,o,i,s,a;for(var l in _)if(_.hasOwnProperty(l)){if(e=[],n=_[l],n.name&&(e.push(n.name.toLowerCase()),n.options&&n.options.aliases&&n.options.aliases.length))for(t=0;t<n.options.aliases.length;t++)e.push(n.options.aliases[t].toLowerCase());for(o=r(n.fn,"function")?n.fn():n.fn,i=0;i<e.length;i++)s=e[i],a=s.split("."),1===a.length?Modernizr[a[0]]=o:(!Modernizr[a[0]]||Modernizr[a[0]]instanceof Boolean||(Modernizr[a[0]]=new Boolean(Modernizr[a[0]])),Modernizr[a[0]][a[1]]=o),w.push((o?"":"no-")+a.join("-"))}}function i(e){var n=S.className,t=Modernizr._config.classPrefix||"";if(B&&(n=n.baseVal),Modernizr._config.enableJSClass){var r=new RegExp("(^|\\s)"+t+"no-js(\\s|$)");n=n.replace(r,"$1"+t+"js$2")}Modernizr._config.enableClasses&&(n+=" "+t+e.join(" "+t),B?S.className.baseVal=n:S.className=n)}function s(e,n){if("object"==typeof e)for(var t in e)b(e,t)&&s(t,e[t]);else{e=e.toLowerCase();var r=e.split("."),o=Modernizr[r[0]];if(2==r.length&&(o=o[r[1]]),"undefined"!=typeof o)return Modernizr;n="function"==typeof n?n():n,1==r.length?Modernizr[r[0]]=n:(!Modernizr[r[0]]||Modernizr[r[0]]instanceof Boolean||(Modernizr[r[0]]=new Boolean(Modernizr[r[0]])),Modernizr[r[0]][r[1]]=n),i([(n&&0!=n?"":"no-")+r.join("-")]),Modernizr._trigger(e,n)}return Modernizr}function a(e,n){return!!~(""+e).indexOf(n)}function l(){return"function"!=typeof n.createElement?n.createElement(arguments[0]):B?n.createElementNS.call(n,"http://www.w3.org/2000/svg",arguments[0]):n.createElement.apply(n,arguments)}function A(e){return e.replace(/([a-z])-([a-z])/g,function(e,n,t){return n+t.toUpperCase()}).replace(/^-/,"")}function u(e,n){return function(){return e.apply(n,arguments)}}function f(e,n,t){var o;for(var i in e)if(e[i]in n)return t===!1?e[i]:(o=n[e[i]],r(o,"function")?u(o,t||n):o);return!1}function c(n,t,r){var o;if("getComputedStyle"in e){o=getComputedStyle.call(e,n,t);var i=e.console;if(null!==o)r&&(o=o.getPropertyValue(r));else if(i){var s=i.error?"error":"log";i[s].call(i,"getComputedStyle returning null, its possible modernizr test results are inaccurate")}}else o=!t&&n.currentStyle&&n.currentStyle[r];return o}function p(e){return e.replace(/([A-Z])/g,function(e,n){return"-"+n.toLowerCase()}).replace(/^ms-/,"-ms-")}function d(){var e=n.body;return e||(e=l(B?"svg":"body"),e.fake=!0),e}function m(e,t,r,o){var i,s,a,A,u="modernizr",f=l("div"),c=d();if(parseInt(r,10))for(;r--;)a=l("div"),a.id=o?o[r]:u+(r+1),f.appendChild(a);return i=l("style"),i.type="text/css",i.id="s"+u,(c.fake?c:f).appendChild(i),c.appendChild(f),i.styleSheet?i.styleSheet.cssText=e:i.appendChild(n.createTextNode(e)),f.id=u,c.fake&&(c.style.background="",c.style.overflow="hidden",A=S.style.overflow,S.style.overflow="hidden",S.appendChild(c)),s=t(f,e),c.fake?(c.parentNode.removeChild(c),S.style.overflow=A,S.offsetHeight):f.parentNode.removeChild(f),!!s}function g(n,r){var o=n.length;if("CSS"in e&&"supports"in e.CSS){for(;o--;)if(e.CSS.supports(p(n[o]),r))return!0;return!1}if("CSSSupportsRule"in e){for(var i=[];o--;)i.push("("+p(n[o])+":"+r+")");return i=i.join(" or "),m("@supports ("+i+") { #modernizr { position: absolute; } }",function(e){return"absolute"==c(e,null,"position")})}return t}function h(e,n,o,i){function s(){f&&(delete U.style,delete U.modElem)}if(i=r(i,"undefined")?!1:i,!r(o,"undefined")){var u=g(e,o);if(!r(u,"undefined"))return u}for(var f,c,p,d,m,h=["modernizr","tspan","samp"];!U.style&&h.length;)f=!0,U.modElem=l(h.shift()),U.style=U.modElem.style;for(p=e.length,c=0;p>c;c++)if(d=e[c],m=U.style[d],a(d,"-")&&(d=A(d)),U.style[d]!==t){if(i||r(o,"undefined"))return s(),"pfx"==n?d:!0;try{U.style[d]=o}catch(v){}if(U.style[d]!=m)return s(),"pfx"==n?d:!0}return s(),!1}function v(e,n,t,o,i){var s=e.charAt(0).toUpperCase()+e.slice(1),a=(e+" "+x.join(s+" ")+s).split(" ");return r(n,"string")||r(n,"undefined")?h(a,n,o,i):(a=(e+" "+E.join(s+" ")+s).split(" "),f(a,n,t))}function y(e,n,r){return v(e,t,t,n,r)}var w=[],_=[],C={_version:"3.6.0",_config:{classPrefix:"",enableClasses:!0,enableJSClass:!0,usePrefixes:!0},_q:[],on:function(e,n){var t=this;setTimeout(function(){n(t[e])},0)},addTest:function(e,n,t){_.push({name:e,fn:n,options:t})},addAsyncTest:function(e){_.push({name:null,fn:e})}},Modernizr=function(){};Modernizr.prototype=C,Modernizr=new Modernizr;var b,S=n.documentElement,B="svg"===S.nodeName.toLowerCase();!function(){var e={}.hasOwnProperty;b=r(e,"undefined")||r(e.call,"undefined")?function(e,n){return n in e&&r(e.constructor.prototype[n],"undefined")}:function(n,t){return e.call(n,t)}}(),C._l={},C.on=function(e,n){this._l[e]||(this._l[e]=[]),this._l[e].push(n),Modernizr.hasOwnProperty(e)&&setTimeout(function(){Modernizr._trigger(e,Modernizr[e])},0)},C._trigger=function(e,n){if(this._l[e]){var t=this._l[e];setTimeout(function(){var e,r;for(e=0;e<t.length;e++)(r=t[e])(n)},0),delete this._l[e]}},Modernizr._q.push(function(){C.addTest=s}),Modernizr.addAsyncTest(function(){function e(e,n,t){function r(n){var r=n&&"load"===n.type?1==o.width:!1,i="webp"===e;s(e,i&&r?new Boolean(r):r),t&&t(n)}var o=new Image;o.onerror=r,o.onload=r,o.src=n}var n=[{uri:"data:image/webp;base64,UklGRiQAAABXRUJQVlA4IBgAAAAwAQCdASoBAAEAAwA0JaQAA3AA/vuUAAA=",name:"webp"},{uri:"data:image/webp;base64,UklGRkoAAABXRUJQVlA4WAoAAAAQAAAAAAAAAAAAQUxQSAwAAAABBxAR/Q9ERP8DAABWUDggGAAAADABAJ0BKgEAAQADADQlpAADcAD++/1QAA==",name:"webp.alpha"},{uri:"data:image/webp;base64,UklGRlIAAABXRUJQVlA4WAoAAAASAAAAAAAAAAAAQU5JTQYAAAD/////AABBTk1GJgAAAAAAAAAAAAAAAAAAAGQAAABWUDhMDQAAAC8AAAAQBxAREYiI/gcA",name:"webp.animation"},{uri:"data:image/webp;base64,UklGRh4AAABXRUJQVlA4TBEAAAAvAAAAAAfQ//73v/+BiOh/AAA=",name:"webp.lossless"}],t=n.shift();e(t.name,t.uri,function(t){if(t&&"load"===t.type)for(var r=0;r<n.length;r++)e(n[r].name,n[r].uri)})});var Q="Moz O ms Webkit",x=C._config.usePrefixes?Q.split(" "):[];C._cssomPrefixes=x;var E=C._config.usePrefixes?Q.toLowerCase().split(" "):[];C._domPrefixes=E;var T={elem:l("modernizr")};Modernizr._q.push(function(){delete T.elem});var U={style:T.elem.style};Modernizr._q.unshift(function(){delete U.style}),C.testAllProps=v,C.testAllProps=y,Modernizr.addTest("overflowscrolling",y("overflowScrolling","touch",!0)),o(),i(w),delete C.addTest,delete C.addAsyncTest;for(var P=0;P<Modernizr._q.length;P++)Modernizr._q[P]();e.Modernizr=Modernizr}(window,document);/*! @formatter:on */</script>
+
+</head>
+
+<body>
+	<div class="page-wrapper">
+		<!--Header-->
+		<header id="header" class="header">
+			<div class="container">
+				<!--Logo-->
+				<div class="header__wrapper">
+					<a href="index.html" class="header__logo">
+						<img src="images/icon/logo.svg" alt="Astra" width="143" height="24">
+					</a>
+					<div class="header__panel" data-mobile-menu="wrapper">
+						<!-- Menu -->
+						<nav class="nav">
+							<ul class="nav__list list-reset">
+								<li class="nav__item ">
+									<a href="about.html">
+										<span>Об алгоритме</span>
+									</a>
+								</li>
+								<li class="nav__item ">
+									<a href="history.html">
+										<span>История создания</span>
+									</a>
+								</li>
+								<li class="nav__item ">
+									<a href="development.html">
+										<span>Этапы развития</span>
+									</a>
+								</li>
+								<li class="nav__item ">
+									<a href="rates.html">
+										<span>Тарифы</span>
+									</a>
+								</li>
+								<li class="nav__item ">
+									<a href="quotes.html">
+										<span>Котировки</span>
+									</a>
+								</li>
+							</ul>
+
+
+						</nav>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<main class="main">
+			<div class="line line--top"></div>
+			<div class="line-vertical line-vertical--left"></div>
+			<div class="line-vertical line-vertical--right"></div>
+			<div class="line line--bottom"></div>
+
+			<section class="perspective">
+				<div class="container">
+					<div class="perspective__wrapper offset">
+						<div class="perspective__main">
+							<div class="perspective__top">
+								<h2 class="perspective__title section-title">
+									Перспективы
+								</h2>
+								<div class="perspective__text">
+									<p>
+										Интересно то, что система учится на своих ошибках и приспосабливается к меняющейся
+										реальности. Искусственная нейронная сеть ANN моделирует нелинейные зависимости в многомерных
+										данных в тех случаях, когда взаимосвязь между входными переменными трудно проанализировать.
+										Это полезно для торговли различными активами, когда у всех участников рынка нет общего
+										центра принятия решений. По мере обучения Astra модернизируется — это означает, что со
+										временем торговый будет показывать все более впечатляющие результаты.
+									</p>
+								</div>
+							</div>
+							<div class="perspective__bottom">
+								<div class="perspective__text">
+									<p>
+										На текущий момент мы работаем только с юридическими лицами, так как ИИ функционирует под
+										руководством специальных отделов и риск-аналитиков для исключения возможности ошибки. В
+										будущем, по мере совершенствования нейронной сети, мы планируем сотрудничать и с физическими
+										лицами.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="perspective__img">
+							<div class="perspective-img">
+								<svg class="perspective-image" width="834" height="834" viewBox="0 0 834 834" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<g clip-path="url(#clip0_344_9831)">
+										<g opacity="0.1" filter="url(#filter0_f_344_9831)">
+											<circle cx="417" cy="417" r="417" fill="url(#paint0_radial_344_9831)" />
+										</g>
+									</g>
+									<defs>
+										<filter id="filter0_f_344_9831" x="-54" y="-54" width="942" height="942" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+											<feFlood flood-opacity="0" result="BackgroundImageFix" />
+											<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+											<feGaussianBlur stdDeviation="27" result="effect1_foregroundBlur_344_9831" />
+										</filter>
+										<radialGradient id="paint0_radial_344_9831" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(417 417) rotate(90) scale(417)">
+											<stop stop-color="#EB5BE5" />
+											<stop offset="1" stop-color="#EB5BE5" stop-opacity="0" />
+										</radialGradient>
+										<clipPath id="clip0_344_9831">
+											<rect width="834" height="834" fill="white" />
+										</clipPath>
+									</defs>
+								</svg>
+								<div class="perspective-img__main">
+									<div class="test2">
+										<picture class="">
+											<source srcset="images/perspective/perspective.webp 1x, images/perspective/perspective@2x.webp 1.3x" type="image/webp">
+											<source srcset="images/perspective/perspective.png 1x, images/perspective/perspective@2x.png 1.3x" type="image/png">
+											<img src="images/perspective/perspective.png" alt="Astra" width="640" height="723">
+										</picture>
+										<svg class="perspective-img__bg" width="1227" height="1287" viewBox="0 0 1297 1287" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<g style="mix-blend-mode:hard-light" opacity="0.4">
+												<path d="M170.973 676.631C155.662 697.341 168.138 725.298 176.29 736.688C190.75 733.375 222.719 689.057 236.896 667.312C240.299 675.596 276.592 722.537 294.314 744.972L300.693 736.688C288.997 723.572 263.266 692.163 253.909 671.454C244.552 650.745 254.263 637.284 260.289 633.142C286.658 619.888 339.326 659.374 362.363 680.773L411.274 744.972L753.65 280.05C727.281 235.318 698.005 204.806 686.664 195.142C684.183 193.416 672.416 186.237 645.196 171.326C617.976 156.416 592.032 165.114 582.462 171.326L535.678 228.277C523.769 224.135 507.324 235.525 500.59 241.738C397.097 378.073 186.284 655.922 170.973 676.631Z" fill="#EB5BE5" />
+											</g>
+											<g style="mix-blend-mode:hard-light" opacity="0.4" filter="url(#filter0_f_248_8716)">
+												<path d="M170.973 676.631C155.662 697.341 168.138 725.298 176.29 736.688C190.75 733.375 222.719 689.057 236.896 667.312C240.299 675.596 276.592 722.537 294.314 744.972L300.693 736.688C288.997 723.572 263.266 692.163 253.909 671.454C244.552 650.745 254.263 637.284 260.289 633.142C286.658 619.888 339.326 659.374 362.363 680.773L411.274 744.972L753.65 280.05C727.281 235.318 698.005 204.806 686.664 195.142C684.183 193.416 672.416 186.237 645.196 171.326C617.976 156.416 592.032 165.114 582.462 171.326L535.678 228.277C523.769 224.135 507.324 235.525 500.59 241.738C397.097 378.073 186.284 655.922 170.973 676.631Z" fill="#EB5BE5" />
+											</g>
+											<g style="mix-blend-mode:hard-light" opacity="0.4">
+												<path d="M573.957 685.951C599.475 690.921 632.083 728.059 645.196 746.007C657.105 744.351 672.133 724.608 678.158 714.944C723.524 652.471 819.361 520.484 839.776 492.319C860.191 464.155 904.991 428.811 924.839 414.66C997.142 372.413 1054.91 395.676 1074.76 412.589L1133.24 498.532C1134.94 485.278 1128.99 470.92 1125.8 465.397L969.497 244.844C963.826 236.906 943.127 217.301 905.7 202.39C868.272 187.48 844.029 208.603 836.587 221.028L504.843 668.348C484.428 696.512 513.35 737.379 530.362 754.291C530.362 748.492 559.425 706.315 573.957 685.951Z" fill="#EB5BE5" />
+											</g>
+											<g style="mix-blend-mode:hard-light" opacity="0.4" filter="url(#filter1_f_248_8716)">
+												<path d="M573.957 685.951C599.475 690.921 632.083 728.059 645.196 746.007C657.105 744.351 672.133 724.608 678.158 714.944C723.524 652.471 819.361 520.484 839.776 492.319C860.191 464.155 904.991 428.811 924.839 414.66C997.142 372.413 1054.91 395.676 1074.76 412.589L1133.24 498.532C1134.94 485.278 1128.99 470.92 1125.8 465.397L969.497 244.844C963.826 236.906 943.127 217.301 905.7 202.39C868.272 187.48 844.029 208.603 836.587 221.028L504.843 668.348C484.428 696.512 513.35 737.379 530.362 754.291C530.362 748.492 559.425 706.315 573.957 685.951Z" fill="#EB5BE5" />
+											</g>
+											<defs>
+												<filter id="filter0_f_248_8716" x="0.993301" y="0.357193" width="915.393" height="907.351" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+													<feFlood flood-opacity="0" result="BackgroundImageFix" />
+													<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+													<feGaussianBlur stdDeviation="81.3681" result="effect1_foregroundBlur_248_8716" />
+												</filter>
+												<filter id="filter1_f_248_8716" x="335.086" y="34.5255" width="961.192" height="882.502" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+													<feFlood flood-opacity="0" result="BackgroundImageFix" />
+													<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+													<feGaussianBlur stdDeviation="81.3681" result="effect1_foregroundBlur_248_8716" />
+												</filter>
+											</defs>
+										</svg>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+		</main>
+		<!-- Footer -->
+		<footer class="footer footer--main" id="footer">
+			<div class="container">
+				<div class="footer__wrapper">
+
+				</div>
+			</div>
+		</footer>
+
+	</div>
+
+	<script src="js/app.min.js"></script>
+	<script src="js/slider.min.js"></script>
+
+</body>
+
+</html>

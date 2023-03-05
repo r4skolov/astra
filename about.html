@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Об алгоритме</title>
+	<link rel="stylesheet" href="css/app.css">
+	<script src="https://polyfill.io/v3/polyfill.min.js?features=globalThis%2CElement.prototype.closest%2CURLSearchParams"
+		        nomodule></script>
+	<script src="js/webcomponents-bundle.js" nomodule></script>
+	<script>/*! @formatter:off modernizr 3.6.0 (Custom Build) | MIT https://modernizr.com/download/?-overflowscrolling-webp-setclasses !*/!function(e,n,t){function r(e,n){return typeof e===n}function o(){var e,n,t,o,i,s,a;for(var l in _)if(_.hasOwnProperty(l)){if(e=[],n=_[l],n.name&&(e.push(n.name.toLowerCase()),n.options&&n.options.aliases&&n.options.aliases.length))for(t=0;t<n.options.aliases.length;t++)e.push(n.options.aliases[t].toLowerCase());for(o=r(n.fn,"function")?n.fn():n.fn,i=0;i<e.length;i++)s=e[i],a=s.split("."),1===a.length?Modernizr[a[0]]=o:(!Modernizr[a[0]]||Modernizr[a[0]]instanceof Boolean||(Modernizr[a[0]]=new Boolean(Modernizr[a[0]])),Modernizr[a[0]][a[1]]=o),w.push((o?"":"no-")+a.join("-"))}}function i(e){var n=S.className,t=Modernizr._config.classPrefix||"";if(B&&(n=n.baseVal),Modernizr._config.enableJSClass){var r=new RegExp("(^|\\s)"+t+"no-js(\\s|$)");n=n.replace(r,"$1"+t+"js$2")}Modernizr._config.enableClasses&&(n+=" "+t+e.join(" "+t),B?S.className.baseVal=n:S.className=n)}function s(e,n){if("object"==typeof e)for(var t in e)b(e,t)&&s(t,e[t]);else{e=e.toLowerCase();var r=e.split("."),o=Modernizr[r[0]];if(2==r.length&&(o=o[r[1]]),"undefined"!=typeof o)return Modernizr;n="function"==typeof n?n():n,1==r.length?Modernizr[r[0]]=n:(!Modernizr[r[0]]||Modernizr[r[0]]instanceof Boolean||(Modernizr[r[0]]=new Boolean(Modernizr[r[0]])),Modernizr[r[0]][r[1]]=n),i([(n&&0!=n?"":"no-")+r.join("-")]),Modernizr._trigger(e,n)}return Modernizr}function a(e,n){return!!~(""+e).indexOf(n)}function l(){return"function"!=typeof n.createElement?n.createElement(arguments[0]):B?n.createElementNS.call(n,"http://www.w3.org/2000/svg",arguments[0]):n.createElement.apply(n,arguments)}function A(e){return e.replace(/([a-z])-([a-z])/g,function(e,n,t){return n+t.toUpperCase()}).replace(/^-/,"")}function u(e,n){return function(){return e.apply(n,arguments)}}function f(e,n,t){var o;for(var i in e)if(e[i]in n)return t===!1?e[i]:(o=n[e[i]],r(o,"function")?u(o,t||n):o);return!1}function c(n,t,r){var o;if("getComputedStyle"in e){o=getComputedStyle.call(e,n,t);var i=e.console;if(null!==o)r&&(o=o.getPropertyValue(r));else if(i){var s=i.error?"error":"log";i[s].call(i,"getComputedStyle returning null, its possible modernizr test results are inaccurate")}}else o=!t&&n.currentStyle&&n.currentStyle[r];return o}function p(e){return e.replace(/([A-Z])/g,function(e,n){return"-"+n.toLowerCase()}).replace(/^ms-/,"-ms-")}function d(){var e=n.body;return e||(e=l(B?"svg":"body"),e.fake=!0),e}function m(e,t,r,o){var i,s,a,A,u="modernizr",f=l("div"),c=d();if(parseInt(r,10))for(;r--;)a=l("div"),a.id=o?o[r]:u+(r+1),f.appendChild(a);return i=l("style"),i.type="text/css",i.id="s"+u,(c.fake?c:f).appendChild(i),c.appendChild(f),i.styleSheet?i.styleSheet.cssText=e:i.appendChild(n.createTextNode(e)),f.id=u,c.fake&&(c.style.background="",c.style.overflow="hidden",A=S.style.overflow,S.style.overflow="hidden",S.appendChild(c)),s=t(f,e),c.fake?(c.parentNode.removeChild(c),S.style.overflow=A,S.offsetHeight):f.parentNode.removeChild(f),!!s}function g(n,r){var o=n.length;if("CSS"in e&&"supports"in e.CSS){for(;o--;)if(e.CSS.supports(p(n[o]),r))return!0;return!1}if("CSSSupportsRule"in e){for(var i=[];o--;)i.push("("+p(n[o])+":"+r+")");return i=i.join(" or "),m("@supports ("+i+") { #modernizr { position: absolute; } }",function(e){return"absolute"==c(e,null,"position")})}return t}function h(e,n,o,i){function s(){f&&(delete U.style,delete U.modElem)}if(i=r(i,"undefined")?!1:i,!r(o,"undefined")){var u=g(e,o);if(!r(u,"undefined"))return u}for(var f,c,p,d,m,h=["modernizr","tspan","samp"];!U.style&&h.length;)f=!0,U.modElem=l(h.shift()),U.style=U.modElem.style;for(p=e.length,c=0;p>c;c++)if(d=e[c],m=U.style[d],a(d,"-")&&(d=A(d)),U.style[d]!==t){if(i||r(o,"undefined"))return s(),"pfx"==n?d:!0;try{U.style[d]=o}catch(v){}if(U.style[d]!=m)return s(),"pfx"==n?d:!0}return s(),!1}function v(e,n,t,o,i){var s=e.charAt(0).toUpperCase()+e.slice(1),a=(e+" "+x.join(s+" ")+s).split(" ");return r(n,"string")||r(n,"undefined")?h(a,n,o,i):(a=(e+" "+E.join(s+" ")+s).split(" "),f(a,n,t))}function y(e,n,r){return v(e,t,t,n,r)}var w=[],_=[],C={_version:"3.6.0",_config:{classPrefix:"",enableClasses:!0,enableJSClass:!0,usePrefixes:!0},_q:[],on:function(e,n){var t=this;setTimeout(function(){n(t[e])},0)},addTest:function(e,n,t){_.push({name:e,fn:n,options:t})},addAsyncTest:function(e){_.push({name:null,fn:e})}},Modernizr=function(){};Modernizr.prototype=C,Modernizr=new Modernizr;var b,S=n.documentElement,B="svg"===S.nodeName.toLowerCase();!function(){var e={}.hasOwnProperty;b=r(e,"undefined")||r(e.call,"undefined")?function(e,n){return n in e&&r(e.constructor.prototype[n],"undefined")}:function(n,t){return e.call(n,t)}}(),C._l={},C.on=function(e,n){this._l[e]||(this._l[e]=[]),this._l[e].push(n),Modernizr.hasOwnProperty(e)&&setTimeout(function(){Modernizr._trigger(e,Modernizr[e])},0)},C._trigger=function(e,n){if(this._l[e]){var t=this._l[e];setTimeout(function(){var e,r;for(e=0;e<t.length;e++)(r=t[e])(n)},0),delete this._l[e]}},Modernizr._q.push(function(){C.addTest=s}),Modernizr.addAsyncTest(function(){function e(e,n,t){function r(n){var r=n&&"load"===n.type?1==o.width:!1,i="webp"===e;s(e,i&&r?new Boolean(r):r),t&&t(n)}var o=new Image;o.onerror=r,o.onload=r,o.src=n}var n=[{uri:"data:image/webp;base64,UklGRiQAAABXRUJQVlA4IBgAAAAwAQCdASoBAAEAAwA0JaQAA3AA/vuUAAA=",name:"webp"},{uri:"data:image/webp;base64,UklGRkoAAABXRUJQVlA4WAoAAAAQAAAAAAAAAAAAQUxQSAwAAAABBxAR/Q9ERP8DAABWUDggGAAAADABAJ0BKgEAAQADADQlpAADcAD++/1QAA==",name:"webp.alpha"},{uri:"data:image/webp;base64,UklGRlIAAABXRUJQVlA4WAoAAAASAAAAAAAAAAAAQU5JTQYAAAD/////AABBTk1GJgAAAAAAAAAAAAAAAAAAAGQAAABWUDhMDQAAAC8AAAAQBxAREYiI/gcA",name:"webp.animation"},{uri:"data:image/webp;base64,UklGRh4AAABXRUJQVlA4TBEAAAAvAAAAAAfQ//73v/+BiOh/AAA=",name:"webp.lossless"}],t=n.shift();e(t.name,t.uri,function(t){if(t&&"load"===t.type)for(var r=0;r<n.length;r++)e(n[r].name,n[r].uri)})});var Q="Moz O ms Webkit",x=C._config.usePrefixes?Q.split(" "):[];C._cssomPrefixes=x;var E=C._config.usePrefixes?Q.toLowerCase().split(" "):[];C._domPrefixes=E;var T={elem:l("modernizr")};Modernizr._q.push(function(){delete T.elem});var U={style:T.elem.style};Modernizr._q.unshift(function(){delete U.style}),C.testAllProps=v,C.testAllProps=y,Modernizr.addTest("overflowscrolling",y("overflowScrolling","touch",!0)),o(),i(w),delete C.addTest,delete C.addAsyncTest;for(var P=0;P<Modernizr._q.length;P++)Modernizr._q[P]();e.Modernizr=Modernizr}(window,document);/*! @formatter:on */</script>
+
+</head>
+
+<body>
+	<div class="page-wrapper">
+		<!--Header-->
+		<header id="header" class="header">
+			<div class="container">
+				<!--Logo-->
+				<div class="header__wrapper">
+					<a href="index.html" class="header__logo">
+						<img src="images/icon/logo.svg" alt="Astra" width="143" height="24">
+					</a>
+					<div class="header__panel" data-mobile-menu="wrapper">
+						<!-- Menu -->
+						<nav class="nav">
+							<ul class="nav__list list-reset">
+								<li class="nav__item active">
+									<a href="about.html">
+										<span>Об алгоритме</span>
+									</a>
+								</li>
+								<li class="nav__item ">
+									<a href="history.html">
+										<span>История создания</span>
+									</a>
+								</li>
+								<li class="nav__item ">
+									<a href="development.html">
+										<span>Этапы развития</span>
+									</a>
+								</li>
+								<li class="nav__item ">
+									<a href="rates.html">
+										<span>Тарифы</span>
+									</a>
+								</li>
+								<li class="nav__item ">
+									<a href="quotes.html">
+										<span>Котировки</span>
+									</a>
+								</li>
+							</ul>
+
+
+						</nav>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<main class="main">
+			<div class="line line--top"></div>
+			<div class="line-vertical line-vertical--left"></div>
+			<div class="line-vertical line-vertical--right"></div>
+			<div class="line line--bottom"></div>
+
+			<section class="about" data-slider="about-slider">
+				<div class="line-vertical line-vertical--center"></div>
+				<div class="container">
+					<div class="about__wrapper offset">
+						<div class=about__wrap>
+							<div class="about__main">
+								<h2 class="about__title section-title">
+									Об алгоритме
+								</h2>
+								<div class="about__text">
+									<p>
+										Astra способен стать надежным помощником, сэкономить время, подсказать верное решение,
+										защитить
+										от финансовых рисков и взять на себя все торговые действия.
+									</p>
+									<p>
+										Нейронная сеть постоянно самообучается и адаптируется к новым рыночным условиям, что
+										повышает
+										точность прогнозирования.
+									</p>
+									<p>
+										Торговый робот функционирует на основе триединой системы, включающей программный код,
+										компьютер
+										с доступом в интернет и торговый терминал для связи с биржей.
+									</p>
+								</div>
+								<div class="about__swiper">
+									<div class="swiper swiper--about">
+										<div class="swiper-wrapper">
+											<div class="swiper-slide">
+												<div class="about-card about-card--green">
+													<div class="about-card__wrap">
+														<p class="about-card__text">
+															Отслеживает ситуацию на фондовых и криптовалютных биржах различных стран
+														</p>
+													</div>
+												</div>
+											</div>
+											<div class="swiper-slide">
+												<div class="about-card about-card--yellow">
+													<div class="about-card__wrap">
+														<p class="about-card__text">
+															Отслеживает ситуацию на фондовых и криптовалютных биржах различных стран
+														</p>
+													</div>
+												</div>
+											</div>
+											<div class="swiper-slide">
+												<div class="about-card about-card--green">
+													<div class="about-card__wrap">
+														<p class="about-card__text">
+															Отслеживает ситуацию на фондовых и криптовалютных биржах различных стран
+														</p>
+													</div>
+												</div>
+											</div>
+											<div class="swiper-slide">
+												<div class="about-card about-card--yellow">
+													<div class="about-card__wrap">
+														<p class="about-card__text">
+															Отслеживает ситуацию на фондовых и криптовалютных биржах различных стран
+														</p>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="swiper-nav">
+											<div class="swiper-button-prev">
+												<svg width="26" height="11" viewBox="0 0 26 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<g opacity="0.3">
+														<path d="M2 3.99988C0.89543 3.99988 3.91405e-08 3.10445 8.74228e-08 1.99988C1.35705e-07 0.895308 0.895431 -0.000122031 2 -0.000121983L24 -0.000121498C25.1046 -0.00012145 26 0.895309 26 1.99988C26 3.10445 25.1046 3.99988 24 3.99988L2 3.99988Z" fill="#DDDDDD" />
+														<path d="M0.928861 3.75735C0.147813 2.9763 0.147813 1.70997 0.928862 0.928926C1.70991 0.147877 2.97624 0.147877 3.75729 0.928926L9.58572 6.75735C10.3668 7.5384 10.3668 8.80473 9.58572 9.58578C8.80467 10.3668 7.53834 10.3668 6.75729 9.58578L0.928861 3.75735Z" fill="#DDDDDD" />
+													</g>
+												</svg>
+											</div>
+											<div class="swiper-button-next">
+												<svg width="26" height="11" viewBox="0 0 26 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<g opacity="0.3">
+														<path d="M24 7.00012C25.1046 7.00012 26 7.89555 26 9.00012C26 10.1047 25.1046 11.0001 24 11.0001L2 11.0001C0.895429 11.0001 -1.35705e-07 10.1047 -8.74228e-08 9.00012C-3.91405e-08 7.89555 0.895432 7.00012 2 7.00012L24 7.00012Z" fill="#DDDDDD" />
+														<path d="M25.0711 7.24265C25.8522 8.0237 25.8522 9.29003 25.0711 10.0711C24.2901 10.8521 23.0238 10.8521 22.2427 10.0711L16.4143 4.24265C15.6332 3.4616 15.6332 2.19527 16.4143 1.41422C17.1953 0.633172 18.4617 0.633172 19.2427 1.41422L25.0711 7.24265Z" fill="#DDDDDD" />
+													</g>
+												</svg>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="about-average">
+									<div class="about-average__count">
+										89%
+									</div>
+									<p class="about-average__text">
+										Среднее количество успешно проведенных сделок с помощью Astra
+									</p>
+								</div>
+								<div class="line line--top"></div>
+								<div class="line-vertical line-vertical--right"></div>
+							</div>
+							<div class="about-image">
+								<div class="line-vertical line-vertical--center"></div>
+								<div class="line line--center"></div>
+								<div class="about-image__wrapper">
+									<svg width="1054" height="880" viewBox="0 0 1054 1080" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<g clip-path="url(#clip0_344_8880)">
+											<g opacity="0.1" filter="url(#filter0_f_344_8880)">
+												<circle cx="524" cy="531" r="406" fill="url(#paint0_radial_344_8880)" />
+											</g>
+											<path opacity="0.3" d="M882.706 215.405L882.714 215.414L1014.34 361.313C1047.44 398.003 1058.35 449.612 1042.94 496.56L981.63 683.252L981.626 683.264L921.087 870.206C905.863 917.217 866.624 952.471 818.257 962.594L625.924 1002.85L625.912 1002.85L433.746 1043.89C385.421 1054.21 335.271 1037.86 302.321 1001.03L171.294 854.595L171.286 854.586L39.659 708.686C6.55842 671.996 -4.3534 620.387 11.0634 573.439L72.3692 386.747L72.373 386.735L132.913 199.793C148.137 152.782 187.376 117.528 235.742 107.405L428.075 67.1518L428.087 67.1492L620.253 26.1071C668.578 15.7861 718.729 32.1408 751.679 68.9662L882.706 215.405Z" stroke="#1E1E1E" stroke-width="6" />
+										</g>
+										<defs>
+											<filter id="filter0_f_344_8880" x="64" y="71" width="920" height="920" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+												<feFlood flood-opacity="0" result="BackgroundImageFix" />
+												<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+												<feGaussianBlur stdDeviation="27" result="effect1_foregroundBlur_344_8880" />
+											</filter>
+											<radialGradient id="paint0_radial_344_8880" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(524 531) rotate(90) scale(406)">
+												<stop stop-color="#EB5BE5" />
+												<stop offset="1" stop-color="#EB5BE5" stop-opacity="0" />
+											</radialGradient>
+											<clipPath id="clip0_344_8880">
+												<rect width="1054" height="1080" fill="white" />
+											</clipPath>
+										</defs>
+									</svg>
+									<picture class="about-image__pic">
+										<source srcset="images/about/about.webp 1x, images/about/about@2x.webp 1.3x" type="image/webp">
+										<source srcset="images/about/about.png 1x, images/about/about@2x.png 1.3x" type="image/png">
+										<img src="images/about/about.png" alt="Astra" width="600" height="560">
+									</picture>
+								</div>
+							</div>
+							<a href="#" class="b-btn b-btn--primary">
+								<span>Использовать алгоритм</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+		</main>
+		<!-- Footer -->
+		<footer class="footer footer--main" id="footer">
+			<div class="container">
+				<div class="footer__wrapper">
+
+				</div>
+			</div>
+		</footer>
+
+	</div>
+
+	<script src="js/app.min.js"></script>
+	<script src="js/slider.min.js"></script>
+
+
+</body>
+
+</html>
