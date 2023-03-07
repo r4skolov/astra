@@ -363,6 +363,12 @@ const burger = () => {
     menu?.classList.remove('active');
     bodyScrollLock_esm_enableBodyScroll(targetElement);
   });
+  const appHeight = () => {
+    const doc = document.documentElement;
+    doc.style.setProperty('--app-height', `${window.innerHeight}px`);
+  };
+  window.addEventListener('resize', appHeight);
+  appHeight();
 };
 /* harmony default export */ const components_burger = (burger);
 ;// CONCATENATED MODULE: ./source/js/index.js
