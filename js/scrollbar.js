@@ -2970,6 +2970,14 @@ const ratesScroll = document.querySelector('.scroll-rates');
 if (ratesScroll) {
   OverlayScrollbars(ratesScroll, {});
 }
+const tabsScroll = document.querySelector('.scroll-tabs');
+if (tabsScroll) {
+  OverlayScrollbars(tabsScroll, {
+    overflow: {
+      y: 'hidden'
+    }
+  });
+}
 /******/ })()
 ;
 //# sourceMappingURL=scrollbar.js.map
