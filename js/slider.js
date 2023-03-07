@@ -10884,7 +10884,29 @@ function slider(el, config) {
 const aboutSlider = document.querySelectorAll('[data-slider="about-slider"]');
 aboutSlider.forEach(item => slider(item, {
   slidesPerView: 'auto',
-  loop: false
+  loop: false,
+  breakpoints: {
+    768: {
+      slidesPerView: 2
+    }
+  },
+  on: {
+    slideChange() {
+      const currentSlide = this.realIndex + 1;
+      const sliderSlideCurrent = document.querySelector('.current-slide');
+      sliderSlideCurrent.textContent = currentSlide;
+    },
+    beforeInit() {
+      const numOfSlides = this.wrapperEl.querySelectorAll('.swiper-slide').length - 1;
+      const totalSlide = document.querySelector('.total-slides');
+      totalSlide.textContent = numOfSlides;
+      const screen = window.matchMedia('(max-width: 640px)');
+      if (screen.matches) {
+        const numOfSlides = this.wrapperEl.querySelectorAll('.swiper-slide').length;
+        totalSlide.textContent = numOfSlides;
+      }
+    }
+  }
 }));
 const ratesSlider = document.querySelectorAll('[data-slider="rates-slider"]');
 ratesSlider.forEach(item => slider(item, {
@@ -10896,6 +10918,18 @@ ratesSlider.forEach(item => slider(item, {
   breakpoints: {
     768: {
       allowTouchMove: true
+    }
+  },
+  on: {
+    slideChange() {
+      const currentSlide = this.realIndex + 1;
+      const sliderSlideCurrent = document.querySelector('.current-slide');
+      sliderSlideCurrent.textContent = currentSlide;
+    },
+    beforeInit() {
+      const numOfSlides = this.wrapperEl.querySelectorAll('.swiper-slide').length;
+      const totalSlide = document.querySelector('.total-slides');
+      totalSlide.textContent = numOfSlides;
     }
   }
 }));

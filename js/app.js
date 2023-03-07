@@ -30,9 +30,9 @@ if (typeof window !== 'undefined') {
 var isIosDevice = typeof window !== 'undefined' && window.navigator && window.navigator.platform && (/iP(ad|hone|od)/.test(window.navigator.platform) || window.navigator.platform === 'MacIntel' && window.navigator.maxTouchPoints > 1);
 
 
-var locks = (/* unused pure expression or super */ null && ([]));
+var locks = [];
 var documentListenerAdded = false;
-var initialClientY = (/* unused pure expression or super */ null && (-1));
+var initialClientY = -1;
 var previousBodyOverflowSetting = void 0;
 var previousBodyPosition = void 0;
 var previousBodyPaddingRight = void 0;
@@ -348,12 +348,32 @@ class MainMenu {
     this._close();
   }
 }
+;// CONCATENATED MODULE: ./source/js/components/burger.js
+
+const burger = () => {
+  const burgerEl = document?.querySelector('[data-burger]');
+  const menu = document?.querySelector('[data-menu]');
+  const close = document.querySelector('[data-close]');
+  const targetElement = document.querySelector('body');
+  burgerEl?.addEventListener('click', () => {
+    menu?.classList.add('active');
+    bodyScrollLock_esm_disableBodyScroll(targetElement);
+  });
+  close.addEventListener('click', () => {
+    menu?.classList.remove('active');
+    bodyScrollLock_esm_enableBodyScroll(targetElement);
+  });
+};
+/* harmony default export */ const components_burger = (burger);
 ;// CONCATENATED MODULE: ./source/js/index.js
 
 
 
+
 // Init
-function init() {}
+function init() {
+  components_burger();
+}
 (function () {
   init();
 })();
