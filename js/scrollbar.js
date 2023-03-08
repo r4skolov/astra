@@ -2961,11 +2961,23 @@ OverlayScrollbars.env = () => {
 // Scrollbar.init(document.querySelector('#my-scrollbar'));
 
 
-const osInstance = OverlayScrollbars(document.querySelector('.scroll'), {
-  overflow: {
-    x: 'hidden'
-  }
-});
+const test = document.querySelector('.scroll-test');
+if (test) {
+  OverlayScrollbars(test, {
+    overflow: {
+      x: 'hidden',
+      y: 'visible'
+    }
+  });
+}
+const mainScroll = document.querySelector('.scroll');
+if (mainScroll) {
+  OverlayScrollbars(mainScroll, {
+    overflow: {
+      x: 'hidden'
+    }
+  });
+}
 const ratesScroll = document.querySelector('.scroll-rates');
 if (ratesScroll) {
   OverlayScrollbars(ratesScroll, {});
