@@ -2970,7 +2970,7 @@ const ratesScroll = document.querySelector('.scroll-rates');
 if (ratesScroll) {
   OverlayScrollbars(ratesScroll, {});
 }
-const tabsScroll = document.querySelector('.scroll-tabs');
+const tabsScroll = document.querySelector('.tabs__list--test');
 if (tabsScroll) {
   OverlayScrollbars(tabsScroll, {
     overflow: {

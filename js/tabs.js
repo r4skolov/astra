@@ -8,6 +8,7 @@ var __webpack_exports__ = {};
 class Tabs {
   constructor(root) {
     this.root = root;
+    this.head = this.root.querySelector(':scope > [data-head]');
     this.list = this.root.querySelector(':scope > [data-list]');
     this.buttons = new Map([...this.list.querySelectorAll(':scope > [data-target]')].map(entry => [entry.dataset.target, entry]));
     this.containers = new Map([...this.root.querySelectorAll(':scope > [data-tab]')].map(entry => [entry.dataset.tab, entry]));
